@@ -19,10 +19,10 @@ Inspired by _Vivaldi Reader Mode_, [water.css](https://github.com/kognise/water.
 
 You can get it via `npm i -D 140.css`.
 
-Or use it via CDN :
+Or use it via [CDN](https://www.jsdelivr.com/package/npm/140.css) :
 
 ```
-...todo...
+<script src="https://cdn.jsdelivr.net/npm/140.css@1/dist/140.min.css" />
 ```
 
 ## Credits

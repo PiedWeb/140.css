@@ -2,6 +2,7 @@
   "name": "140.css",
   "version": "1.0.0",
   "description": "Minimal theme in less than 140 lines of CSS.",
+  "main": "dist/140.min.css",
   "scripts": {
     "getSize": "gzip -c dist/140.min.css | wc -c",
     "dev": "# just open docs/index.html in your favorite navigator",
