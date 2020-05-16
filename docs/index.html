@@ -3,7 +3,7 @@
 
 <head>
   <title>140.css Kitchen Sink</title>
-  <link rel="stylesheet" href="dist/140.css" id="style">
+  <link rel="stylesheet" href="dist/140.min.css" id="style">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Just to have every circle in green on lighthouse">
   <link rel="canonical" href="http://140.piedweb.com/" />
@@ -12,11 +12,11 @@
       // work around to toggle prefers-scheme-color
       // you don't need it in production !
       var a = document.getElementById("style");
-      a.x = 'dist/140-dark.css' == a.x ? 'dist/140-light.css' : 'dist/140-dark.css'; // short if
+      a.x = 'dist/140-dark.min.css' == a.x ? 'dist/140-light.min.css' : 'dist/140-dark.min.css'; // short if
       a.href = a.x;
 
       var b = document.getElementById("img");
-      b.src = 'dist/140-dark.css' == a.x ? 'https://raw.githubusercontent.com/PiedWeb/piedweb-devoluix-theme/master/src/img/logo-dark.png' : 'https://raw.githubusercontent.com/PiedWeb/piedweb-devoluix-theme/master/src/img/logo_title.png';
+      b.src = 'dist/140-dark.min.css' == a.x ? 'https://raw.githubusercontent.com/PiedWeb/piedweb-devoluix-theme/master/src/img/logo-dark.png' : 'https://raw.githubusercontent.com/PiedWeb/piedweb-devoluix-theme/master/src/img/logo_title.png';
     }
   </script>
 </head>
