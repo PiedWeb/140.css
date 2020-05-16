@@ -1,0 +1,10 @@
+:root {
+  --bg: #f6f6f6;
+  --bg-light: #fff; /*  used as --white */
+  --bg-dark: #dee2e6;
+  --color: #111111;
+  --color-light: #555555;
+  --width: 700px;
+  --link: #2b6cb0;
+  --link-hover: #4299e1; /*  think to contrast ratio when button is hover */
+}

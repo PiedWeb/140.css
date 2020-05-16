@@ -1,0 +1,31 @@
+{
+  "name": "140.css",
+  "version": "1.0.0",
+  "description": "Minimal theme in less than 140 lines of CSS.",
+  "scripts": {
+    "getSize": "gzip -c dist/140.min.css | wc -c",
+    "dev": "# just open docs/index.html in your favorite navigator",
+    "build-light": "postcss src/140-light.css -o dist/140-light.min.css",
+    "build-dark": "postcss src/140-dark.css -o dist/140-dark.min.css",
+    "build": "postcss src/140.css -o dist/140.min.css && npm run build-light && npm run build-dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PiedWeb/140.css.git"
+  },
+  "keywords": [
+    "framework",
+    "css"
+  ],
+  "author": "Robin D. <contact@piedweb.com> https://piedweb.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PiedWeb/140.css/issues"
+  },
+  "homepage": "https://dev.piedweb.com",
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "postcss-cli": "^7.1.1",
+    "postcss-import": "^12.0.1"
+  }
+}

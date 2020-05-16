@@ -1,0 +1,17 @@
+:root {
+  --bg: #18354a;
+  --bg-light: #1d4563;
+  --bg-dark: #093959;
+  --color: #cccccc;
+  --color-light: #e1efff;
+  --width: 700px;
+  --link: #ffdf00;
+  --link-hover: #ffc700;
+}
+
+input:not([type='checkbox']):not([type='radio']):not([type='submit']):not([disabled]),
+select,
+textarea {
+  background-color: var(--bg-light);
+  color: var(--color-light);
+}

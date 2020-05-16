@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>140.css Kitchen Sink</title>
+  <link rel="stylesheet" href="../src/140.css" id="style">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Just to have every circle in green on lighthouse">
+  <script>
+    function switchColorTheme() {
+      // work around to toggle prefers-scheme-color
+      // you don't need it in production !
+      var a = document.getElementById("style");
+      a.x = '../src/140-dark.css' == a.x ? '../src/140-light.css' : '../src/140-dark.css'; // short if
+      a.href = a.x;
+
+      var b = document.getElementById("img");
+      b.src = '../src/140-dark.css' == a.x ? 'https://raw.githubusercontent.com/PiedWeb/piedweb-devoluix-theme/master/src/img/logo-dark.png' : 'https://raw.githubusercontent.com/PiedWeb/piedweb-devoluix-theme/master/src/img/logo_title.png';
+    }
+  </script>
+</head>
+
+<body>
+
+  <header style="
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: .5rem 2rem;
+      border-bottom: 1px solid var(--color-light)
+    ">
+    <span style="display:block;font-size: 2.2em;"><a href="/">140.css</a></span>
+    <nav>
+      <a href="#1">Item 1</a> &nbsp;•&nbsp;
+      <a href="#" onclick="switchColorTheme()">Switch Color Scheme</a>
+    </nav>
+  </header>
+  <style>
+    @media (max-width: 576px) {
+      header {
+        flex-direction: column;
+      }
+    }
+  </style>
+
+  <div class="container">
+    <h1>140.css</h1>
+
+    <h2>Kickass Simple Theme in 140 lines of pure CSS for only 799 bytes.</h2>
+
+    <p>
+      Web Navigator are like old stone house. It's possible to destroy everything and build a new fancy house. Or, just
+      enhance a little bit the experience, marrying old stone and comfort.
+    </p>
+
+    <p><strong>Moroever, it's faster !</strong></p>
+
+    <p>
+      <strong>140.css</strong> leave the navigator express his self by adding, as less as possible, opinionated modern
+      design (responsive, readable forms and table).
+    </p>
+
+    <p>And it's done in less than 140 lines of CSS.</p>
+
+    <p>It's some kind of tweet design.</p>
+
+    <p><a href="https://github.com/PiedWeb/140.css">Look the code source</a>.</p>
+
+    <p>This theme was inspired by <em>Vivaldi Reader Mode</em> and <em>Water.css</em>.</p>
+
+    <button onclick="switchColorTheme()">Sitch prefers-color-scheme</button>
+
+
+    <h2>Kitchen Sink</h2>
+
+
+    <h4>Summary</h4>
+
+    <ul>
+      <li><a href="#heading">Heading</a></li>
+      <li><a href="#table">Table</a></li>
+      <li><a href="#emphasis">Emphasis</a></li>
+      <li><a href="#lists">Lists</a></li>
+      <li><a href="#image">Image</a></li>
+      <li><a href="#blockquote">Blockquote</a></li>
+      <li><a href="#forms">Forms</a></li>
+      <li><a href="#details">Details</a></li>
+    </ul>
+
+    <h3 style="margin-top:2em; padding-top:1em; border-top:1px solid #eee" id=heading>Heading</h3>
+
+    <h1> Heading1 </h1>
+    <h2> Heading 2 </h2>
+    <h3> Heading 3 </h3>
+    <h4> Heading 4 </h4>
+    <h5> Heading 5 </h5>
+    <h6> Heading 6 </h6>
+
+
+    <h3 style="margin-top:2em; padding-top:1em; border-top:1px solid #eee" id=table> Table </h3>
+    <table>
+      <thead>
+        <tr>
+          <th> Tables </th>
+          <th> are </th>
+          <th> readable </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> col 1 - line 1 </td>
+          <td> col... </td>
+          <td> 1</td>
+        </tr>
+        <tr>
+          <td> col 1 - line 2</td>
+          <td> col...</td>
+          <td> 2</td>
+        </tr>
+        <tr>
+          <td> col 1 - line 3</td>
+          <td> col...</td>
+          <td> 3</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <h3 style="margin-top:2em; padding-top:1em; border-top:1px solid #eee" id=emphasis> Emphasis </h3>
+    <p> Emphasis, aka <em>italics</em>. </p>
+    <p> Strong Emphasis, aka <strong>bold</strong>. </p>
+    <p> <mark> Mark </mark> . </p>
+
+
+    <h3 style="margin-top:2em; padding-top:1em; border-top:1px solid #eee" id=lists> Lists </h3>
+    <ul>
+      <li> First item </li>
+      <li> Second item </li>
+      <li> Third item </li>
+    </ul>
+    <ol>
+      <li> First item </li>
+      <li> Second item </li>
+      <li> Third item </li>
+    </ol>
+
+
+    <h3 style="margin-top:2em; padding-top:1em; border-top:1px solid #eee" id=image> Responsive Image </h3>
+    <p>
+      <picture>
+        <source srcset="https://raw.githubusercontent.com/PiedWeb/piedweb-devoluix-theme/master/src/img/logo-dark.png"
+          media="(prefers-color-scheme: dark)" />
+        <img src="https://raw.githubusercontent.com/PiedWeb/piedweb-devoluix-theme/master/src/img/logo_title.png"
+          alt="Responsive Image" loading="lazy" id=img />
+      </picture>
+    </p>
+
+    <h3 style="margin-top:2em; padding-top:1em; border-top:1px solid #eee" id=code> Code </h3>
+    <pre>
+&lt;?php
+class HelloWorld
+{
+
+    public static function show() {
+      echo 'Hello World !';
+    }
+}</pre>
+
+    <h3> Inline Code </h3>
+    <p> <code>    HelloWord::show()   </code> </p>
+
+
+    <h3 style="margin-top:2em; padding-top:1em; border-top:1px solid #eee" id=blockquote> Blockquote </h3>
+    <blockquote>
+      <p>
+        There are no plans to reinvent any wheels, unless those wheels are old, broken, unsafe or horrible to use.
+        If the code cannot be installed with Composer, has an API written with BizZaroCapS, doesn’t have a single
+        unit-test, is actually broken or the lead developer has abandoned the project, then that is a problem which
+        can most likely be solved with a fresh start, and we’ll be on the case to make it as awesome as possible.
+      </p>
+      <footer> <cite> <a href="https://thephpleague.com/"> The League of PHP </a> </cite> </footer>
+    </blockquote>
+
+
+    <h3 style="margin-top:2em; padding-top:1em; border-top:1px solid #eee" id=forms> Forms </h3>
+
+    <label for="email"> Email </label>
+    <input name="email" placeholder="john.doe@gmail.com" type="email" id=email />
+
+    <label for="password"> Password </label>
+    <input name="password" placeholder="password" type="password" id=password />
+
+    <input checked name="remember" type="checkbox" id="remember" />
+    <label for="remember"> Remember me </label> </p>
+
+    <input type="submit" />
+
+    <label for="textarea">Textarea</label>
+    <textarea id="textarea"></textarea>
+
+    <label for="disabled"> Disabled </label>
+    <input disabled name="disabled" placeholder="john.doe@exemple.tld" type="email" id=disabled />
+
+    <p>
+      <input id="laravel" name="framework" type="radio" /> <label for="laravel"> Laravel </label><br>
+      <input id="symfony" name="framework" type="radio" /> <label for="symfony"> symfony </label><br>
+      <input id="django" name="framework" type="radio" /> <label for="django"> django </label>
+    </p>
+
+    <label for="themes"> Select your favorite CSS framework </label>
+    <select name="themes" id="themes">
+      <option> tailwind </option>
+      <option> bootstrap </option>
+      <option> ... </option>
+    </select>
+
+
+    <h3 style="margin-top:2em; padding-top:1em; border-top:1px solid #eee" id=details> Details and summary </h3>
+    <details>
+      <summary> Click to see this hidden content </summary>
+      <p> Here am I ! </p>
+    </details>
+
+
+    <footer style="margin-top:3em; font-size:0.8em; color: var(--color-light)">
+      <p>Design by <a href=https://piedweb.com>Pied
+          Web</a>&nbsp;/&nbsp;<a href="https://dev.piedweb.com">Design Blog</a></p>
+    </footer>
+  </div>
+</body>
+
+</html>
