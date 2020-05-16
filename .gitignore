@@ -4,4 +4,3 @@ node_modules
 yarn-error.log
 npm-error.log
 npm-debug.log
-dist

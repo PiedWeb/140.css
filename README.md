@@ -7,9 +7,7 @@ design (responsive, readable forms and table).
 
 It do this in less than 140 lines of CSS.
 
-Want to know more and see a demo, look here :
-
-...todo...
+Want to know more and see a demo : [140.piedweb.com](http://140.piedweb.com/)
 
 - Write in less than 140 lines of pure CSS
 - 799 bytes with dark theme (gzip compressed)

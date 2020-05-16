@@ -3,19 +3,20 @@
 
 <head>
   <title>140.css Kitchen Sink</title>
-  <link rel="stylesheet" href="../src/140.css" id="style">
+  <link rel="stylesheet" href="dist/140.css" id="style">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Just to have every circle in green on lighthouse">
+  <link rel="canonical" href="http://140.piedweb.com/" />
   <script>
     function switchColorTheme() {
       // work around to toggle prefers-scheme-color
       // you don't need it in production !
       var a = document.getElementById("style");
-      a.x = '../src/140-dark.css' == a.x ? '../src/140-light.css' : '../src/140-dark.css'; // short if
+      a.x = 'dist/140-dark.css' == a.x ? 'dist/140-light.css' : 'dist/140-dark.css'; // short if
       a.href = a.x;
 
       var b = document.getElementById("img");
-      b.src = '../src/140-dark.css' == a.x ? 'https://raw.githubusercontent.com/PiedWeb/piedweb-devoluix-theme/master/src/img/logo-dark.png' : 'https://raw.githubusercontent.com/PiedWeb/piedweb-devoluix-theme/master/src/img/logo_title.png';
+      b.src = 'dist/140-dark.css' == a.x ? 'https://raw.githubusercontent.com/PiedWeb/piedweb-devoluix-theme/master/src/img/logo-dark.png' : 'https://raw.githubusercontent.com/PiedWeb/piedweb-devoluix-theme/master/src/img/logo_title.png';
     }
   </script>
 </head>
@@ -60,7 +61,7 @@
       design (responsive, readable forms and table).
     </p>
 
-    <p>And it's done in less than 140 lines of CSS.</p>
+    <p>And it do this in less than 140 lines of CSS.</p>
 
     <p>It's some kind of tweet design.</p>
 

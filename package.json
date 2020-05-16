@@ -7,7 +7,9 @@
     "dev": "# just open docs/index.html in your favorite navigator",
     "build-light": "postcss src/140-light.css -o dist/140-light.min.css",
     "build-dark": "postcss src/140-dark.css -o dist/140-dark.min.css",
-    "build": "postcss src/140.css -o dist/140.min.css && npm run build-light && npm run build-dark"
+    "build-docs": "cp -r dist docs/dist",
+    "build-main": "postcss src/140.css -o dist/140.min.css",
+    "build": "npm run build-main && npm run build-light && npm run build-dark && npm run build-docs"
   },
   "repository": {
     "type": "git",
