@@ -10,7 +10,7 @@
     <a href="https://github.com/PiedWeb/140.css/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/140.css.svg" alt="License"></a>
 </p>
 
-## Kickass Simple Theme in 140 lines of pure CSS for only 799 bytes
+## Simple theme in 140 lines of pure CSS for only 799 bytes
 
 <strong>140.css</strong> leave the navigator express his self by adding, as less as possible, opinionated modern
 design (responsive, readable forms and table).
